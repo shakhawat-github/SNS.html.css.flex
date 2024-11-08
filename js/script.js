@@ -16,12 +16,8 @@ banner.addEventListener("mousemove", (move) => {
   let imojibnr = document.querySelector(".imojibnr");
   let bnnrimg = document.querySelector(".bnr-img");
 
-  imojibnr.style.transform = `translate(${move.clientX / 100}px , ${
-    move.clientY / 100
-  }px)`;
-  bnnrimg.style.transform = `translate(${move.clientX / 100}px , ${
-    move.clientY / 100
-  }px)`;
+  imojibnr.style.transform = `translate(${move.clientX / 100}px , ${move.clientY / 100}px)`;
+  bnnrimg.style.transform = `translate(${move.clientX / 100}px , ${move.clientY / 100}px)`;
 });
 // banner end
 
@@ -79,14 +75,10 @@ aboutinfo.map((aboutitem, abouderecton) => {
 const about = document.querySelector("#about");
 about.addEventListener("mousemove", (aboutmove) => {
   document.querySelectorAll(".aboutimage").forEach((item) => {
-    item.style.transform = `translate(${aboutmove.clientX / 200}px , ${
-      aboutmove.clientY / 200
-    }px)`;
+    item.style.transform = `translate(${aboutmove.clientX / 200}px , ${aboutmove.clientY / 200}px)`;
   });
   document.querySelectorAll(".abouttext").forEach((itemtxt) => {
-    itemtxt.style.transform = `translate(${aboutmove.clientX / 200}px , ${
-      aboutmove.clientY / 200
-    }px)`;
+    itemtxt.style.transform = `translate(${aboutmove.clientX / 200}px , ${aboutmove.clientY / 200}px)`;
   });
 });
 
