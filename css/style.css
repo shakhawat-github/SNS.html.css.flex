@@ -68,7 +68,7 @@ body {
 #nav {
   padding: 13px 0;
   background: #071b27;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -137,6 +137,57 @@ body {
   border-radius: 5px;
   background: #289bde;
 }
+#nav .navcollapse{
+  width: 20%;
+  height: 100vh;
+  background-color: #071b27;
+  border-left: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  right: -25%;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nav .navcollapse .close{
+  width: 50px;
+  align-self: flex-start;
+  margin: 15px 0 0 15px;
+}
+#nav .navcollapse .profile{
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#nav .navcollapse .collapselist{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  margin-top: 70px;
+}
+#nav .navcollapse .collapselist li a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+#nav .navcollapse .collapselist li a:hover{
+  color: #289bde;
+}
 
 /* nav end */
 
@@ -147,19 +198,13 @@ body {
   text-align: center;
   position: relative;
 }
-#banner .bnrimojileft,
-#banner .bnrimojiright {
+#banner .bannerimoji{
+  position: relative;
+}
+#banner .bannerimoji img{
   position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-}
-#banner .bnrimojileft {
-  right: 75%;
-  max-width: 355px;
-}
-#banner .bnrimojiright {
-  left: 75%;
-  max-width: 386px;
+  top: 0;
+  left: -15%;
 }
 #banner p {
   color: #fff;
@@ -207,8 +252,7 @@ body {
   width: 100%;
   position: absolute;
   bottom: -660px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0%;
 }
 /* banner end */
 
