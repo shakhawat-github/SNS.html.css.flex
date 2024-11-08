@@ -126,7 +126,7 @@ body {
   background-color: #071b27;
   border: none;
 }
-#nav .navwraper .navbtn a {
+#nav .navwraper .navbtn button {
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -136,6 +136,7 @@ body {
   padding: 8px 45px;
   border-radius: 5px;
   background: #289bde;
+  border: none;
 }
 #nav .navcollapse{
   width: 20%;
@@ -155,9 +156,9 @@ body {
   align-items: center;
 }
 #nav .navcollapse .close{
-  width: 50px;
+  width: 40px;
   align-self: flex-start;
-  margin: 15px 0 0 15px;
+  margin: 20px 0 0 15px;
 }
 #nav .navcollapse .profile{
   margin-top: 50px;
@@ -300,9 +301,6 @@ body {
 #about .about-box .item .img {
   display: flex;
   justify-content: end;
-}
-#about .about-box .item:nth-child(2) {
-  flex-direction: row-reverse;
 }
 #about .about-box .item:nth-child(2) .text p {
   max-width: 750px;
