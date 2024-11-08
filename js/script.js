@@ -5,7 +5,7 @@ getstart.addEventListener("click", () => {
 });
 
 document.querySelector(".close").addEventListener("click", () => {
-  document.querySelector(".navcollapse").style.right = "-25%";
+  document.querySelector(".navcollapse").style.right = "-60%";
 });
 
 // nav end
