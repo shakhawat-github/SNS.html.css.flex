@@ -34,6 +34,7 @@
   }
   #nav .navcollapse {
     width: 50%;
+    right: -60%;
   }
   #nav .navcollapse .profile {
     margin-top: 30px;
